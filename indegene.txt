@@ -1,79 +1,28 @@
-<!-- Service Section Starts Here -->
-      <section class="container">
-        <div class="row service-heading">
-          <h1>COMPANY</h1>
-          <p>Services</p>
-        </div>
-        <div class="row service">
-          <div class="col-6 service-left p-0">
-            <div class="row">
-              <div class="col-s-9 p-0">
-                <h4>Customer Experince</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-              </div>
-              <div class="col-s-3">
-                <img src="./images/customer-experience.svg">
-              </div>
-            </div>
+* {
+  box-sizing: border-box;
+}
 
-            <div class="row">
-              <div class="col-s-9 p-0">
-                <h4>Customer Experince</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-              </div>
-              <div class="col-s-3">
-                <img src="./images/customer-experience.svg">
-              </div>
-            </div>
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
 
-            <div class="row">
-              <div class="col-s-9 p-0">
-                <h4>Customer Experince</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-              </div>
-              <div class="col-s-3">
-                <img src="./images/customer-experience.svg">
-              </div>
-            </div>
-        </div>
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
 
-        <div class="col-6 p-0">
-          <div class="row">
-            <div class="col-s-3">
-              <img src="./images/data-and-analytics.svg">
-            </div>
-            <div class="col-s-9 p-0">
-              <h4>Customer Experince</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-s-3">
-              <img src="./images/data-and-analytics.svg">
-            </div>
-            <div class="col-s-9 p-0">
-              <h4>Customer Experince</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-s-3">
-              <img src="./images/data-and-analytics.svg">
-            </div>
-            <div class="col-s-9 p-0">
-              <h4>Customer Experince</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
-          </div>
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
 
-      </div>
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
 
-        </div>
-      </section>
-      <!-- Service Section Ends Here -->
+.p-0 {
+  padding: 0 !important;
+}
