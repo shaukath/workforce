@@ -59,3 +59,39 @@
 
       </section>
       <!-- Blog Section Ends Here -->
+      
+      
+      .blog {
+  background: #e3f1f1;
+  padding: 1px;
+}
+
+.blog img {
+  width: 100%;
+}
+
+.calendar, .blog-img{
+  padding: 0;
+  background: #fff;
+  float: left;
+}
+.date {
+  background: #f1bbbb;
+  color: #c71010;
+  text-align: center;
+}
+
+.day {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.month, .year {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.calendar .note p {
+  margin: 0;
+    font-size: 12px;
+}
