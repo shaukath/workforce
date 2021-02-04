@@ -1,28 +1,61 @@
-* {
-  box-sizing: border-box;
-}
+<!-- Blog Section Starts Here -->
+      <section class="blog">
+        <div class="container">
+          <h1>Recent Blog</h1>
+          <div class="row">
+            <div class="col-4 col-s-12">
+              <div class="calendar">
+                <div class="col-12 blog-img">
+                  <img src="./images/blog.jpg" alt="">
+                </div>
+                <div class="col-s-3 date">
+                  <p class="day">04</p>
+                  <p class="month">Feb</p>
+                  <p class="year">2020</p>
+                </div>
+                <div class="col-s-9 note">
+                  <h4>Press Release</h4>
+                  <p> Learn how the websites of the top 30 brands performed on our maturity index and how
+                    they can improve their customer's experience </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-s-12">
+              <div class="calendar">
+                <div class="col-12 blog-img">
+                  <img src="./images/blog.jpg" alt="">
+                </div>
+                <div class="col-s-3 date">
+                  <p class="day">04</p>
+                  <p class="month">Feb</p>
+                  <p class="year">2020</p>
+                </div>
+                <div class="col-s-9 note">
+                  <h4>Press Release</h4>
+                  <p> Learn how the websites of the top 30 brands performed on our maturity index and how
+                    they can improve their customer's experience </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-s-12">
+              <div class="calendar">
+                <div class="col-12 blog-img">
+                  <img src="./images/blog.jpg" alt="">
+                </div>
+                <div class="col-s-3 date">
+                  <p class="day">04</p>
+                  <p class="month">Feb</p>
+                  <p class="year">2020</p>
+                </div>
+                <div class="col-s-9 note">
+                  <h4>Press Release</h4>
+                  <p> Learn how the websites of the top 30 brands performed on our maturity index and how
+                    they can improve their customer's experience </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-.row::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-html {
-  font-family: "Lucida Sans", sans-serif;
-}
-
-h1 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-.p-0 {
-  padding: 0 !important;
-}
+      </section>
+      <!-- Blog Section Ends Here -->
