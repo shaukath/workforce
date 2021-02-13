@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TestserviceService } from './testservice.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'workforce';
+  constructor(private testService: TestserviceService) { }
+ 
 }
+// ngOnInit(): void
+
+//     let empData:any = this.testService.getEmployeeData();
+//     this.empData = empData;
+//   }
+
+ 

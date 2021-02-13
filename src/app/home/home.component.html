@@ -1,0 +1,12 @@
+<div class="container bg-light">
+    <div class="row row-cols-5 py-5 px-5">
+      <div class="col" *ngFor= "let employee of employeeData">
+        <!-- (click)="getEmployee(employee.id)" -->
+        <div class="card mb-4 box-shadow" routerLink="/employees" [queryParams]="{id: employee.id}">
+          <img src="{{employee.avatar}}" alt="employee image" class="card-img-top">
+          <p class="emp-name">{{employee.first_name}} {{employee.last_name}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
