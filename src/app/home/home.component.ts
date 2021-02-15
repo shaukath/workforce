@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
       this.testService.setEmployeeData(this.employeeData);
       this.employeeData = this.testService.getEmployeeData1();
      
-      
+      console.log(this.employeeData);
       
       console.log(res.data);
     });

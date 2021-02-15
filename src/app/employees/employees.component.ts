@@ -8,33 +8,35 @@ import { TestserviceService } from '../testservice.service';
   styleUrls: ['./employees.component.scss']
 })
 export class EmployeesComponent implements OnInit {
- 
-  employee:any = {};
+
+  employee: any = {};
   id: string = '';
-  empDetails:any= []
+  employeeData:any = [];
+  
 
 
   constructor(private testService: TestserviceService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    let empData:any = this.testService.getEmployeeData1();
-    this.empDetails = empData;
-    
    
+    //  this.getEmployeeById();
+    this.route.queryParams.subscribe(params => {
+      console.log(params.id);
+      this.id = params.id;
+      this.getEmployeeById(this.id);
 
-  // //  this.getEmployeeById();
-  //  this.route.queryParams.subscribe(params=>{
-  //    console.log(params.id);
-  //    this.id = params.id;
-  //    this.getEmployeeById(this.id);
-  //  
+    });
   }
 
   getEmployeeById(id: string) {
-    this.testService.getEmployeeById(id).subscribe((res: any) => {
-      this.employee = res.data;
-      console.log(res.data);
-    });
+    this.employeeData = this.testService.getEmployeeData1();
+    console.log(this.employeeData);
+   this.employee = this.employeeData.find((employee:any) => employee.id == id);
+  //  this.employee = this.employeeData.find(function(employee:any) { return employee.id == id} );
+       // this.testService.getEmployeeById(id).subscribe((res: any) => {
+    //   this.employee = res.data;
+    //   console.log(res.data);
+    // });
 
   }
 }

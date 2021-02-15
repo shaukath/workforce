@@ -26,9 +26,11 @@ export class TestserviceService {
 
 
   }
+  
   getEmployeeById(id: string) {
-    const url = "https://reqres.in/api/users/" + id
-    return this.http.get(url);
+    
+    // const url = "https://reqres.in/api/users/" + id
+    // return this.http.get(url);
   }
 
 }  
