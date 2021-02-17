@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { TestserviceService } from '../testservice.service';
 
 @Component({
@@ -12,10 +12,15 @@ export class EmployeesComponent implements OnInit {
   employee: any = {};
   id: string = '';
   employeeData:any = [];
+  index: number = -1;
   
 
 
-  constructor(private testService: TestserviceService, private route: ActivatedRoute) { }
+  constructor(
+    private testService: TestserviceService,
+    private route: ActivatedRoute,
+    private router: Router
+    ) { }
 
   ngOnInit(): void {
    
@@ -39,5 +44,22 @@ export class EmployeesComponent implements OnInit {
     // });
 
   }
-}
+  update() {
+    this.router.navigate(["/addemployee"] ,{
+      queryParams: {
+        id: this.id
+      }
+    } )
+  
+    
+     
+    }
+  }
+  // remove(index:number) {
+
+  //   this.employeeData.splice(index, 1);
+  //   this.testService.setEmployeeData(this.employeeData);
+  // }
+  
+
 

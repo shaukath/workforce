@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EmployeesComponent } from './employees/employees.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
+import { AddemployeeComponent } from './addemployee/addemployee.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeesComponent,
-    HomeComponent
+    HomeComponent,
+    AddemployeeComponent
   ],
   imports: [
     BrowserModule,

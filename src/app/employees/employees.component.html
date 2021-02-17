@@ -3,14 +3,14 @@
         <img src="{{employee.avatar}}" alt="Employee Avatar" class="img">
         <div class="row my-3">
             <div class="col-6">
-                <button class="btn btn-primary col-12">
+            
+                <button class="btn btn-primary col-12" (click)="update()" >
                     Update
                 </button>
             </div>
-            <div class="col-6">
-                <button class="btn btn-warning col-12">
-                    Remove 
-                </button>
+            <div class="col-6" let i = index>
+                <button class="btn btn-warning col-12"> Remove </button>
+                <!-- (click)="remove() -->
             </div>
         </div>
         

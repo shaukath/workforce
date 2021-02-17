@@ -15,8 +15,12 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.getData();
   }
+  
   getData() {
     
+    let empData: any = this.testService.getEmployeeData1();
+    this.employeeData = empData;
+    if(!empData){
     this.testService.getEmployeeData().subscribe((res: any) => {
       this.employeeData = res.data;
       this.testService.setEmployeeData(this.employeeData);
@@ -26,6 +30,10 @@ export class HomeComponent implements OnInit {
       
       console.log(res.data);
     });
+  }
+
+  
+  
   }
   
   getEmployee(id: string) {
