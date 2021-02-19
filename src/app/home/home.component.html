@@ -4,7 +4,7 @@
         <!-- (click)="getEmployee(employee.id)" -->
         <div class="card mb-4 box-shadow" routerLink="/employees" [queryParams]="{id: employee.id}">
           <img src="{{employee.avatar}}" alt="employee image" class="card-img-top">
-          <p class="emp-name">{{employee.first_name}} {{employee.last_name}}</p>
+          <p class="emp-name">{{employee.first_name | uppercase}} {{employee.last_name |uppercase}}</p>
         </div>
       </div>
     </div>

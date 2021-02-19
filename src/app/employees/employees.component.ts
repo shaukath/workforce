@@ -11,8 +11,9 @@ export class EmployeesComponent implements OnInit {
 
   employee: any = {};
   id: string = '';
-  employeeData:any = [];
-  index: number = -1;
+  employeeData: any = [];
+  showSuccess: boolean = false;
+  
   
 
 
@@ -50,16 +51,19 @@ export class EmployeesComponent implements OnInit {
         id: this.id
       }
     } )
-  
-    
-     
-    }
   }
-  // remove(index:number) {
+  remove() {
+    let index = this.employeeData.findIndex((employee:any)=>employee.id == this.id);
+    console.log(index);
+    this.employeeData.splice(index, 1);
+    this.testService.setEmployeeData(this.employeeData);
+    this.showSuccess = true;
+    setTimeout(() => {
+      this.router.navigateByUrl('');
+    }, 3000)
+  }
 
-  //   this.employeeData.splice(index, 1);
-  //   this.testService.setEmployeeData(this.employeeData);
-  // }
   
-
+  }
+  
 

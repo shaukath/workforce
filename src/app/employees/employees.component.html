@@ -1,4 +1,7 @@
-<div class="row m-5">
+<div class="alert alert-success" role="alert" *ngIf="showSuccess" >
+    employee details  successfully removed.
+ </div>
+ <div class="row m-5">
     <div class="col-3">
         <img src="{{employee.avatar}}" alt="Employee Avatar" class="img">
         <div class="row my-3">
@@ -9,10 +12,13 @@
                 </button>
             </div>
             <div class="col-6" let i = index>
-                <button class="btn btn-warning col-12"> Remove </button>
-                <!-- (click)="remove() -->
+                <button class="btn btn-warning col-12 "
+                (click)="remove()" >
+                     Remove </button>
+                
             </div>
         </div>
+       
         
     </div>
     <div class="col-9 my-5">
