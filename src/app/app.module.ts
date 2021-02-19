@@ -8,13 +8,15 @@ import { EmployeesComponent } from './employees/employees.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { AddemployeeComponent } from './addemployee/addemployee.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeesComponent,
     HomeComponent,
-    AddemployeeComponent
+    AddemployeeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
